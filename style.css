@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: center / cover no-repeat url(images/bg-mobile.svg), hsl(257, 40%, 49%);
+    position: relative;
+}
+
+.container{
+    padding: 30px;
+    width: 100%;
+    z-index: 3;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+.header{
+    z-index: 2;
+}
+
+.logo{
+    width: 150px;
+    margin-bottom: 50px;
+    margin-left: 0;
+}
+
+.hero-banner{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    z-index: 2;
+}
+
+.hero-img{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.description{
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.register{
+    color: hsl(257, 40%, 49%);
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    border: solid 1px transparent;
+    border-radius: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+}
+
+.register:hover{
+    color: #fff;
+    background: hsl(300, 69%, 71%);
+}
+
+.social{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:not(:last-child){
+    margin-right: 10px;
+}
+
+.social-icon{
+    border: solid 1px #fff;
+    border-radius: 50%;
+    padding: 5px 7px;
+    cursor: pointer;
+}
+
+.fa-brands:hover{
+    color: #e882e8;
+}
+
+
+.facebook{
+    padding: 5px 8px;
+}
+
+.twitter{
+    padding: 5px 6px;
+}
+
+.attribution{
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+.attribution a{
+    color: #e882e8;
+}
