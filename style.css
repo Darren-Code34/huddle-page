@@ -1,3 +1,4 @@
+/* mobile desgn */
 *{
     margin: 0;
     padding: 0;
@@ -5,12 +6,13 @@
 }
 
 body{
-    background: center / cover no-repeat url(images/bg-mobile.svg), hsl(257, 40%, 49%);
+    background: top / contain no-repeat url(images/bg-mobile.svg), hsl(257, 40%, 49%);
     position: relative;
 }
 
 .container{
     padding: 30px;
+    padding-bottom: 0;
     width: 100%;
     z-index: 3;
     color: #fff;
@@ -19,11 +21,12 @@ body{
 
 .header{
     z-index: 2;
+    padding: 30px;
+    margin-bottom: 50px;
 }
 
 .logo{
     width: 150px;
-    margin-bottom: 50px;
     margin-left: 0;
 }
 
@@ -38,8 +41,13 @@ body{
     width: 100%;
 }
 
-.title{
+.main{
     text-align: center;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.title{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     line-height: 1.5;
@@ -47,7 +55,6 @@ body{
 }
 
 .description{
-    text-align: center;
     font-weight: 400;
     line-height: 1.4;
     margin-bottom: 20px;
@@ -60,9 +67,6 @@ body{
     padding: 10px;
     border: solid 1px transparent;
     border-radius: 20px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     margin-bottom: 40px;
 }
 
@@ -75,7 +79,6 @@ body{
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 25px;
 }
 
 a{
@@ -88,14 +91,14 @@ a:not(:last-child){
 }
 
 .social-icon{
-    border: solid 1px #fff;
+    border: solid 1.5px #fff;
     border-radius: 50%;
     padding: 5px 7px;
     cursor: pointer;
 }
 
-.fa-brands:hover{
-    color: #e882e8;
+.social-icon:hover{
+    border-color: #e882e8;
 }
 
 
@@ -115,5 +118,93 @@ a:not(:last-child){
 }
 
 .attribution a{
+    color: #fff;
+}
+
+.attribution a:hover{
     color: #e882e8;
+}
+
+/* responsive design */
+
+@media screen and (min-width:800px) {
+    body{
+        background: left / cover no-repeat url(images/bg-desktop.svg), hsl(257, 40%, 49%);
+    }
+    .header{
+        padding: 30px 50px 0 50px;
+        height: fit-content;
+    }
+    .logo{
+        width: 180px;
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-banner{
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .main{
+        width: 80%;
+        text-align: left;
+        position: relative;
+        top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .register{
+        margin-bottom: 70px;
+    }
+
+    .social{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+    .main{
+        width: 60%;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .description{
+        line-height: 1.6;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .main{
+        width: 50%;
+        margin-left: 30px;
+    }
+
+}
+
+@media screen and (min-width:1300px) {
+    
+
+    .main{
+        width: 40%;
+        margin-left: 40px;
+    }
+
 }
